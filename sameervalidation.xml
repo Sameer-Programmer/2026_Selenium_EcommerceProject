@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MasterSuite_Sameer">
+    <test name="Test_Sameer">
+        <parameter name="os" value="windows"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+
+            <class name="testCases.TC003_LoginDDT"></class>
+
+        </classes>
+    </test>
+</suite>
