@@ -26,13 +26,17 @@ public class TC001_AccountRegistrationTest extends BaseClass {
 
         ar.setFirstName(DataGenerator.getFirstName());
         ar.setLastName(DataGenerator.getLastName());
-        ar.setEmail(DataGenerator.getUniqueEmail());
+        String provideemail = DataGenerator.getUniqueEmail();
+        System.out.println(provideemail);
+        ar.setEmail(provideemail);
+
         ar.setTelephone(DataGenerator.getPhoneNumber());
 
         String password = DataGenerator.getPassword();
 
         ar.setPassword(password);
         ar.setConfirmPassword(password);
+        System.out.println(password);
 
         ar.clickPrivacyPolicy();
         ar.clickContinue();

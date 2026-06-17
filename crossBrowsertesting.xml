@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" name="All Test Suite" parallel="tests">
+    <!-- Test1-->
+    <test name="Test1">
+        <parameter name="os" value="windows"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="testCases.TC001_AccountRegistrationTest"></class>
+        </classes>
+    </test>
+
+    <!-- Test2-->
+    <test name="Test2">
+        <parameter name="os" value="windows"></parameter>
+        <parameter name="browser" value="edge"></parameter>
+        <classes>
+            <class name="testCases.TC001_AccountRegistrationTest"></class>
+        </classes>
+    </test>
+</suite>

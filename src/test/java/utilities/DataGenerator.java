@@ -19,7 +19,8 @@ public class DataGenerator {
         return faker.number().digits(10);
     }
     public static String getPassword() {
-        return faker.internet().password(8,12,true,true,true);
+        return faker.internet()
+                .password(8,12,true,true,true);
     }
 
     public static String getUniqueEmail() {
