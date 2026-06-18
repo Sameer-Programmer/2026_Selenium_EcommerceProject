@@ -1,0 +1,59 @@
+Test Cases:
+
+T1 --> Sanity
+T2 --> Sanity, Regression
+T3 --> Sanity, Regression
+T4 --> Regression
+T5 --> Regression
+Scenario 1: Run only Sanity
+<groups>
+    <run>
+        <include name="Sanity"/>
+    </run>
+</groups>
+
+Executed Test Cases:
+
+T1
+T2
+T3
+Scenario 2: Run only Regression
+<groups>
+    <run>
+        <include name="Regression"/>
+    </run>
+</groups>
+
+Executed Test Cases:
+
+T2
+T3
+T4
+T5
+Scenario 3: Run Sanity but NOT Regression
+<groups>
+    <run>
+        <include name="Sanity"/>
+        <exclude name="Regression"/>
+    </run>
+</groups>
+
+Executed Test Cases:
+
+T1
+
+Reason:
+
+T2 and T3 belong to both Sanity and Regression.
+
+Since Regression is excluded,
+T2 and T3 are removed.
+
+Only T1 remains.
+Mapping
+Sanity Group     = T1, T2, T3
+Regression Group = T2, T3, T4, T5
+
+Include Sanity              => T1, T2, T3
+Include Regression          => T2, T3, T4, T5
+Include Sanity + Exclude Regression => T1

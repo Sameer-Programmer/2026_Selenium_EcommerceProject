@@ -1,16 +1,16 @@
 package testCases;
 
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
+import testBase.BaseClass;
 import utilities.DataProviders;
 
-public class TC003_LoginDDT extends BaseClass{
+public class TC003_LoginDDT extends BaseClass {
     @Test(dataProviderClass = DataProviders.class,
-            dataProvider= "LoginData")
+            dataProvider= "LoginData",groups = "DataDriven")
     public void verify_loginDDT(String email, String password,String expetResult){
 
 

@@ -1,21 +1,16 @@
 package testCases;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pageObjects.AccountRegistrationPage;
 import pageObjects.HomePage;
+import testBase.BaseClass;
 import utilities.DataGenerator;
-
-import java.time.Duration;
 
 public class TC001_AccountRegistrationTest extends BaseClass {
 
 
-    @Test
+    @Test(groups ={"Regression","Master"})
     public void verifyAccountRegistration() {
 
         HomePage homePage = new HomePage(driver);
