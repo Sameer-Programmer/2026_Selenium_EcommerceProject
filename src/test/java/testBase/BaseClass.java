@@ -19,7 +19,7 @@ public class BaseClass {
     public Properties properties;
 
     @Parameters({"os","browser"})
-    @BeforeClass
+    @BeforeClass(groups={"Sanity","Regression","Master","DataDriven"})
     public void setupDriver(String os,String browser) throws IOException {
 
         //Loading config.propertiesFile
@@ -43,7 +43,7 @@ public class BaseClass {
         driver.get(properties.getProperty("appurl")); //reading from properties file
     }
 
-    @AfterClass
+    @AfterClass(groups={"Sanity","Regression","Master"})
     public void tearDownDriver(){
         driver.close();
         driver.quit();
