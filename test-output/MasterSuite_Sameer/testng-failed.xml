@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MasterSuite_Sameer]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test_Sameer(failed)">
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testCases.TC003_LoginDDT">
+        <methods>
+          <include name="tearDownDriver"/>
+          <include name="verify_loginDDT" invocation-numbers="1 2"/>
+          <include name="setupDriver"/>
+        </methods>
+      </class> <!-- testCases.TC003_LoginDDT -->
+    </classes>
+  </test> <!-- Test_Sameer(failed) -->
+</suite> <!-- Failed suite [MasterSuite_Sameer] -->
