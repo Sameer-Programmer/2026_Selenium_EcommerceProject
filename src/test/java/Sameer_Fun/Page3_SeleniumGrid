@@ -1,0 +1,234 @@
+SELENIUM GRID - QUICK REVISION NOTES
+====================================
+
+1. WHAT IS SELENIUM GRID?
+-------------------------
+- Selenium Grid is a Selenium Component.
+- Used to execute test cases on:
+  * Multiple Operating Systems (Windows, Linux, Mac)
+  * Multiple Browsers (Chrome, Firefox, Edge, Safari)
+  * Multiple Machines
+
+Examples:
+- Windows + Chrome
+- Linux + Firefox
+- Mac + Safari
+
+==================================================
+
+2. MAIN COMPONENTS
+------------------
+
+A) HUB
+------
+- Central machine.
+- Receives test execution requests.
+- Controls all connected Nodes.
+- Distributes tests to Nodes.
+
+B) NODE
+-------
+- Remote machine connected to Hub.
+- Executes actual test cases.
+- Can have one OS and multiple browsers.
+
+Architecture:
+
+            HUB
+          /  |  \
+         /   |   \
+     Node1 Node2 Node3
+
+==================================================
+
+3. WHY SELENIUM GRID?
+---------------------
+
+Without Grid:
+- Tests run only on local machine.
+
+With Grid:
+- Cross Browser Testing.
+- Cross Platform Testing.
+- Parallel Execution.
+- Faster execution.
+
+==================================================
+
+4. GRID SETUP TYPES
+-------------------
+
+A) STANDALONE SETUP
+-------------------
+- Hub and Node are in the same machine.
+- Mainly used for learning and small projects.
+
+Local Machine
+      |
+ Hub + Node
+
+B) DISTRIBUTED SETUP
+--------------------
+- One Hub Machine.
+- Multiple Node Machines.
+
+Hub Machine
+      |
+-------------------
+|        |        |
+Node1   Node2   Node3
+
+==================================================
+
+5. HOW NODES CAN BE CREATED?
+----------------------------
+
+1. Physical Machines
+   - Separate Computers
+
+2. Virtual Machines (VMs)
+   - Windows VM
+   - Linux VM
+   - Mac VM
+
+3. Docker Containers (Modern Approach)
+   - Download Docker Image
+   - Create Container
+   - Container acts like a lightweight machine
+   - Register Container as Selenium Node
+
+Linux Image
+      |
+  Container
+      |
+ Selenium Node
+
+==================================================
+
+6. SELENIUM GRID 4 STANDALONE SETUP
+-----------------------------------
+
+Step 1:
+https://www.selenium.dev/downloads/
+Download selenium-server jar file.
+
+Step 2:
+Open CMD at downloaded jar file location.
+
+Step 3:
+Run the command:
+
+java -jar selenium-server-4.44.0.jar standalone
+
+Step 4:
+Open Grid UI:
+
+http://localhost:4444
+
+Sample Log:
+
+INFO [Standalone.execute] -
+Started Selenium Standalone 4.44.0
+
+http://192.168.29.56:4444
+
+==================================================
+
+7. REMOTE WEBDRIVER EXAMPLE
+---------------------------
+
+String hubUrl = "http://localhost:4444/wd/hub";
+
+DesiredCapabilities cap = new DesiredCapabilities();
+
+cap.setPlatform(Platform.WIN11);
+cap.setBrowserName("chrome");
+
+WebDriver driver =
+        new RemoteWebDriver(
+                new URL(hubUrl), cap);
+
+driver.get("https://www.google.com");
+
+System.out.println(driver.getTitle());
+
+driver.quit();
+
+==================================================
+
+8. INTERVIEW QUESTION
+---------------------
+
+Q) If TestNG can run tests in parallel,
+   why do we need Selenium Grid?
+
+Answer:
+
+TestNG:
+- Parallel execution framework.
+- Runs tests simultaneously.
+- Usually on same machine.
+- Same OS environment.
+
+Selenium Grid:
+- Distributed execution infrastructure.
+- Runs tests on different machines.
+- Runs tests on different OS.
+- Runs tests on different browsers.
+- Supports Cross Browser Testing.
+
+Example:
+
+TestNG Parallel:
+Chrome + Edge
+on same Windows machine
+
+Selenium Grid:
+Chrome on Windows
+Firefox on Linux
+Safari on Mac
+
+==================================================
+
+9. IMPORTANT POINT
+------------------
+
+TestNG = Parallel Execution Framework
+
+Selenium Grid = Distributed Execution Infrastructure
+
+In real projects:
+TestNG + Selenium Grid are often used together.
+
+==================================================
+
+10. ONE-LINE INTERVIEW DEFINITION
+---------------------------------
+
+"Selenium Grid is used to execute Selenium test cases
+across multiple machines, operating systems, and
+browsers simultaneously from a central Hub, enabling
+parallel and cross-browser testing."
+
+==================================================
+
+11. KEY INTERVIEW POINTS
+------------------------
+
+Q) Can Selenium Grid work with a single machine?
+A) Yes. This is called Standalone Grid Setup.
+
+Q) Is Selenium Grid useful with a single node?
+A) Technically yes, but major benefits come when
+   multiple nodes/machines are connected.
+
+Q) What is the main advantage of Selenium Grid?
+A) Cross Browser + Cross Platform Testing.
+
+Q) Can TestNG replace Selenium Grid?
+A) No.
+
+TestNG -> Parallel execution.
+Selenium Grid -> Distributed execution.
+
+Both solve different problems and are often used together.

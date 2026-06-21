@@ -8,27 +8,238 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">MasterSuite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">58,608</td><td></td><td></td></tr>
+<tr><th colspan="8">All Test Suite_Docker</th></tr>
+<tr><td><a href="#t0">Linux-Edge</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">67,056</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Linux_Chrome</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">148,547</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num attn">3</th><th class="num">0</th><th class="num">0</th><th class="num">215,603</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">MasterSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCases.TC003_LoginDDT</td><td><a href="#m0">verify_loginDDT</a></td><td rowspan="2">1781948647033</td><td rowspan="2">1939</td></tr><tr class="failedeven"><td><a href="#m1">verify_loginDDT</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m2">verifyAccountRegistration</a></td><td rowspan="1">1781948614622</td><td rowspan="1">12497</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC002_LoginTest</td><td><a href="#m3">verifyLogin</a></td><td rowspan="1">1781948633750</td><td rowspan="1">6963</td></tr><tr class="passedeven"><td rowspan="3">testCases.TC003_LoginDDT</td><td><a href="#m4">verify_loginDDT</a></td><td rowspan="3">1781948655784</td><td rowspan="3">5736</td></tr><tr class="passedeven"><td><a href="#m5">verify_loginDDT</a></td></tr><tr class="passedeven"><td><a href="#m6">verify_loginDDT</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">All Test Suite_Docker</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Linux-Edge &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m0">setupDriver</a></td><td rowspan="1">1782021068011</td><td rowspan="1">66618</td></tr><tr><th colspan="4">Linux-Edge &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m1">tearDownDriver</a></td><td rowspan="1">1782021134691</td><td rowspan="1">0</td></tr><tr><th colspan="4">Linux-Edge &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m2">verifyAccountRegistration</a></td><td rowspan="1">1782021134673</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Linux_Chrome &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m3">setupDriver</a></td><td rowspan="1">1782021068011</td><td rowspan="1">84856</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC002_LoginTest</td><td><a href="#m4">setupDriver</a></td><td rowspan="1">1782021152874</td><td rowspan="1">63309</td></tr><tr><th colspan="4">Linux_Chrome &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m5">tearDownDriver</a></td><td rowspan="1">1782021152874</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">testCases.TC002_LoginTest</td><td><a href="#m6">tearDownDriver</a></td><td rowspan="1">1782021216186</td><td rowspan="1">0</td></tr><tr><th colspan="4">Linux_Chrome &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">testCases.TC001_AccountRegistrationTest</td><td><a href="#m7">verifyAccountRegistration</a></td><td rowspan="1">1782021152871</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">testCases.TC002_LoginTest</td><td><a href="#m8">verifyLogin</a></td><td rowspan="1">1782021216185</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">testCases.TC003_LoginDDT#verify_loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>lakshmi@yahoo.com</td><td>Laxmi</td><td>Invalid</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:43)
+<h2>Linux-Edge</h2><h3 id="m0">testCases.TC001_AccountRegistrationTest#setupDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Linux</td><td>edge</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;0b15ee88da93&apos;, ip: &apos;172.19.0.3&apos;
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, platformName: linux}]}]
+Capabilities {browserName: MicrosoftEdge, platformName: linux}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:172)
+	at testBase.BaseClass.setupDriver(BaseClass.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testCases.TC003_LoginDDT#verify_loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>laksh@yahoo.com</td><td>Lakshmi</td><td>Invalid</td></tr><tr><th colspan="3">Exception</th></tr><tr><td colspan="3"><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
-	at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:43)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC001_AccountRegistrationTest#tearDownDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TC001_AccountRegistrationTest#verifyAccountRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;0b15ee88da93&apos;, ip: &apos;172.19.0.3&apos;
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, platformName: linux}]}]
+Capabilities {browserName: MicrosoftEdge, platformName: linux}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:172)
+	at testBase.BaseClass.setupDriver(BaseClass.java:66)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
 	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
 	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">testCases.TC001_AccountRegistrationTest#verifyAccountRegistration</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCases.TC002_LoginTest#verifyLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">testCases.TC003_LoginDDT#verify_loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>abc123@gmail.com</td><td>test@123x</td><td>Invalid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">testCases.TC003_LoginDDT#verify_loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>laks@yahoo.com</td><td>xyz</td><td>Invalid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">testCases.TC003_LoginDDT#verify_loginDDT</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>buena1781707473403@yopmail.com</td><td>&amp;2qw4^N19l*</td><td>Valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Linux_Chrome</h2><h3 id="m3">testCases.TC001_AccountRegistrationTest#setupDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Linux</td><td>chrome</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;6f551a97618c&apos;, ip: &apos;172.19.0.2&apos;
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:172)
+	at testBase.BaseClass.setupDriver(BaseClass.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.TC002_LoginTest#setupDriver</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Linux</td><td>chrome</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;6f551a97618c&apos;, ip: &apos;172.19.0.2&apos;
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:172)
+	at testBase.BaseClass.setupDriver(BaseClass.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.TC001_AccountRegistrationTest#tearDownDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.TC002_LoginTest#tearDownDriver</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.TC001_AccountRegistrationTest#verifyAccountRegistration</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;6f551a97618c&apos;, ip: &apos;172.19.0.2&apos;
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:172)
+	at testBase.BaseClass.setupDriver(BaseClass.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.TC002_LoginTest#verifyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn&apos;t exist 
+Host info: host: &apos;6f551a97618c&apos;, ip: &apos;172.19.0.2&apos;
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039bd14*&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.18.33.1-microsoft-standard-WSL2&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:217)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:176)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:172)
+	at testBase.BaseClass.setupDriver(BaseClass.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+	at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+	at java.base/java.util.concurrent.FutureTask.&lt;init&gt;(FutureTask.java:132)
+	at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+	at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

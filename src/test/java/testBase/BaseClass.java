@@ -38,12 +38,17 @@ public class BaseClass {
 
         if(properties.getProperty("execution_env").equalsIgnoreCase("remote")){
 
-            //os
+            // os
             if(os.equalsIgnoreCase("windows")){
                 cap.setPlatform(Platform.WIN11);
-            } else if (os.equalsIgnoreCase("mac")) {
+            }
+            else if(os.equalsIgnoreCase("mac")){
                 cap.setPlatform(Platform.MAC);
-            }else {
+            }
+            else if(os.equalsIgnoreCase("linux")){
+                cap.setPlatform(Platform.LINUX);
+            }
+            else{
                 System.out.println("No Matching found regarding OS");
                 return;
             }
@@ -73,7 +78,7 @@ public class BaseClass {
         }
 
 
-        driver.manage().window().maximize();
+       // driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.manage().deleteAllCookies();
         //driver.get("https://tutorialsninja.com/demo/index.php?route=account/register");

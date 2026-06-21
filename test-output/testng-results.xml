@@ -1,281 +1,595 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-20T15:13:23 IST" name="MasterSuite" finished-at="2026-06-20T15:14:22 IST" duration-ms="58608">
+  <suite started-at="2026-06-21T11:21:07 IST" name="All Test Suite_Docker" finished-at="2026-06-21T11:23:36 IST" duration-ms="148547">
     <groups>
       <group name="Master">
-        <method signature="TC001_AccountRegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@10683d9d]" name="verifyAccountRegistration" class="testCases.TC001_AccountRegistrationTest"/>
-        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@5bda8e08]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
+        <method signature="TC001_AccountRegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@3eb738bb]" name="verifyAccountRegistration" class="testCases.TC001_AccountRegistrationTest"/>
+        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@198b6731]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
+        <method signature="TC001_AccountRegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@5b94b04d]" name="verifyAccountRegistration" class="testCases.TC001_AccountRegistrationTest"/>
       </group> <!-- Master -->
       <group name="Sanity">
-        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@5bda8e08]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
+        <method signature="TC002_LoginTest.verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@198b6731]" name="verifyLogin" class="testCases.TC002_LoginTest"/>
       </group> <!-- Sanity -->
-      <group name="DataDriven">
-        <method signature="TC003_LoginDDT.verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" name="verify_loginDDT" class="testCases.TC003_LoginDDT"/>
-      </group> <!-- DataDriven -->
       <group name="Regression">
-        <method signature="TC001_AccountRegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@10683d9d]" name="verifyAccountRegistration" class="testCases.TC001_AccountRegistrationTest"/>
+        <method signature="TC001_AccountRegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@3eb738bb]" name="verifyAccountRegistration" class="testCases.TC001_AccountRegistrationTest"/>
+        <method signature="TC001_AccountRegistrationTest.verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@5b94b04d]" name="verifyAccountRegistration" class="testCases.TC001_AccountRegistrationTest"/>
       </group> <!-- Regression -->
     </groups>
-    <test started-at="2026-06-20T15:13:23 IST" name="Test" finished-at="2026-06-20T15:14:22 IST" duration-ms="58608">
-      <class name="testCases.TC002_LoginTest">
-        <test-method is-config="true" signature="setupDriver(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@5bda8e08]" started-at="2026-06-20T15:13:50 IST" name="setupDriver" finished-at="2026-06-20T15:13:53 IST" duration-ms="3463" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@5bda8e08]" started-at="2026-06-20T15:13:53 IST" name="verifyLogin" finished-at="2026-06-20T15:14:00 IST" duration-ms="6963" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testCases.TC002_LoginTest@5bda8e08]" started-at="2026-06-20T15:14:00 IST" name="tearDownDriver" finished-at="2026-06-20T15:14:01 IST" duration-ms="477" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownDriver -->
-      </class> <!-- testCases.TC002_LoginTest -->
-      <class name="testCases.TC003_LoginDDT">
-        <test-method is-config="true" signature="setupDriver(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" started-at="2026-06-20T15:14:01 IST" name="setupDriver" finished-at="2026-06-20T15:14:03 IST" duration-ms="1997" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupDriver -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" started-at="2026-06-20T15:14:05 IST" name="verify_loginDDT" data-provider="LoginData" finished-at="2026-06-20T15:14:07 IST" duration-ms="1883" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[buena1781707473403@yopmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[&2qw4^N19l*]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Valid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" started-at="2026-06-20T15:14:07 IST" name="verify_loginDDT" data-provider="LoginData" finished-at="2026-06-20T15:14:08 IST" duration-ms="1939" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[lakshmi@yahoo.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Laxmi]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" started-at="2026-06-20T15:14:09 IST" name="verify_loginDDT" data-provider="LoginData" finished-at="2026-06-20T15:14:11 IST" duration-ms="1839" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[laksh@yahoo.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Lakshmi]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at testCases.TC003_LoginDDT.verify_loginDDT(TC003_LoginDDT.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
-at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" started-at="2026-06-20T15:14:11 IST" name="verify_loginDDT" data-provider="LoginData" finished-at="2026-06-20T15:14:15 IST" duration-ms="4631" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[laks@yahoo.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[xyz]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method signature="verify_loginDDT(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" started-at="2026-06-20T15:14:15 IST" name="verify_loginDDT" data-provider="LoginData" finished-at="2026-06-20T15:14:21 IST" duration-ms="5736" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[abc123@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[test@123x]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Invalid]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_loginDDT -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testCases.TC003_LoginDDT@1a677343]" started-at="2026-06-20T15:14:21 IST" name="tearDownDriver" finished-at="2026-06-20T15:14:22 IST" duration-ms="518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownDriver -->
-      </class> <!-- testCases.TC003_LoginDDT -->
+    <test started-at="2026-06-21T11:21:07 IST" name="Linux-Edge" finished-at="2026-06-21T11:22:14 IST" duration-ms="67056">
       <class name="testCases.TC001_AccountRegistrationTest">
-        <test-method is-config="true" signature="setupDriver(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@10683d9d]" started-at="2026-06-20T15:13:23 IST" name="setupDriver" finished-at="2026-06-20T15:13:34 IST" duration-ms="10721" status="PASS">
+        <test-method is-config="true" signature="setupDriver(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@5b94b04d]" started-at="2026-06-21T11:21:08 IST" name="setupDriver" finished-at="2026-06-21T11:22:14 IST" duration-ms="66618" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[windows]]>
+                <![CDATA[Linux]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '0b15ee88da93', ip: '172.19.0.3'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, platformName: linux}]}]
+Capabilities {browserName: MicrosoftEdge, platformName: linux}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '0b15ee88da93', ip: '172.19.0.3'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, platformName: linux}]}]
+Capabilities {browserName: MicrosoftEdge, platformName: linux}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:217)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:176)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:172)
+at testBase.BaseClass.setupDriver(BaseClass.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupDriver -->
-        <test-method signature="verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@10683d9d]" started-at="2026-06-20T15:13:34 IST" name="verifyAccountRegistration" finished-at="2026-06-20T15:13:47 IST" duration-ms="12497" status="PASS">
+        <test-method signature="verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@5b94b04d]" started-at="2026-06-21T11:22:14 IST" name="verifyAccountRegistration" finished-at="2026-06-21T11:22:14 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '0b15ee88da93', ip: '172.19.0.3'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, platformName: linux}]}]
+Capabilities {browserName: MicrosoftEdge, platformName: linux}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '0b15ee88da93', ip: '172.19.0.3'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: MicrosoftEdge, platformName: linux}]}]
+Capabilities {browserName: MicrosoftEdge, platformName: linux}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:217)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:176)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:172)
+at testBase.BaseClass.setupDriver(BaseClass.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAccountRegistration -->
-        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testCases.TC001_AccountRegistrationTest@10683d9d]" started-at="2026-06-20T15:13:47 IST" name="tearDownDriver" finished-at="2026-06-20T15:13:50 IST" duration-ms="3086" status="PASS">
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testCases.TC001_AccountRegistrationTest@5b94b04d]" started-at="2026-06-21T11:22:14 IST" name="tearDownDriver" finished-at="2026-06-21T11:22:14 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownDriver -->
       </class> <!-- testCases.TC001_AccountRegistrationTest -->
-    </test> <!-- Test -->
-  </suite> <!-- MasterSuite -->
+    </test> <!-- Linux-Edge -->
+    <test started-at="2026-06-21T11:21:07 IST" name="Linux_Chrome" finished-at="2026-06-21T11:23:36 IST" duration-ms="148547">
+      <class name="testCases.TC002_LoginTest">
+        <test-method is-config="true" signature="setupDriver(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC002_LoginTest@198b6731]" started-at="2026-06-21T11:22:32 IST" name="setupDriver" finished-at="2026-06-21T11:23:36 IST" duration-ms="63309" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:217)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:176)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:172)
+at testBase.BaseClass.setupDriver(BaseClass.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="verifyLogin()[pri:0, instance:testCases.TC002_LoginTest@198b6731]" started-at="2026-06-21T11:23:36 IST" name="verifyLogin" finished-at="2026-06-21T11:23:36 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:217)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:176)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:172)
+at testBase.BaseClass.setupDriver(BaseClass.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogin -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testCases.TC002_LoginTest@198b6731]" started-at="2026-06-21T11:23:36 IST" name="tearDownDriver" finished-at="2026-06-21T11:23:36 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- testCases.TC002_LoginTest -->
+      <class name="testCases.TC001_AccountRegistrationTest">
+        <test-method is-config="true" signature="setupDriver(java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_AccountRegistrationTest@3eb738bb]" started-at="2026-06-21T11:21:08 IST" name="setupDriver" finished-at="2026-06-21T11:22:32 IST" duration-ms="84856" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:217)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:176)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:172)
+at testBase.BaseClass.setupDriver(BaseClass.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method signature="verifyAccountRegistration()[pri:0, instance:testCases.TC001_AccountRegistrationTest@3eb738bb]" started-at="2026-06-21T11:22:32 IST" name="verifyAccountRegistration" finished-at="2026-06-21T11:22:32 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Could not start a new session. Could not start a new session. Error while creating session with the driver service. Stopping driver service: Could not start a new session. Response code 500. Message: session not created: DevToolsActivePort file doesn't exist 
+Host info: host: '6f551a97618c', ip: '172.19.0.2'
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039bd14*'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.18.33.1-microsoft-standard-WSL2', java.version: '21.0.10'
+Driver info: driver.version: unknown
+Build info: version: '4.44.0', revision: 'da2039b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, platformName: linux}]}]
+Capabilities {browserName: chrome, platformName: linux}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:76)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:62)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:53)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:217)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:176)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:172)
+at testBase.BaseClass.setupDriver(BaseClass.java:66)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:317)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java)
+at --- Async.Stack.Trace --- (captured by IntelliJ IDEA debugger)
+at java.base/java.util.concurrent.FutureTask.<init>(FutureTask.java:132)
+at java.base/java.util.concurrent.AbstractExecutorService.newTaskFor(AbstractExecutorService.java:113)
+at java.base/java.util.concurrent.AbstractExecutorService.invokeAll(AbstractExecutorService.java:274)
+at org.testng.internal.thread.ThreadUtil.execute(ThreadUtil.java:70)
+at org.testng.SuiteRunner.runInParallelTestMode(SuiteRunner.java:442)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:371)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAccountRegistration -->
+        <test-method is-config="true" signature="tearDownDriver()[pri:0, instance:testCases.TC001_AccountRegistrationTest@3eb738bb]" started-at="2026-06-21T11:22:32 IST" name="tearDownDriver" finished-at="2026-06-21T11:22:32 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- testCases.TC001_AccountRegistrationTest -->
+    </test> <!-- Linux_Chrome -->
+  </suite> <!-- All Test Suite_Docker -->
 </testng-results>

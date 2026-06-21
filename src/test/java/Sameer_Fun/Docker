@@ -1,0 +1,56 @@
+3. Docker Containers (Modern Approach)
+   - Download Docker Image
+   - Create Container
+   - Container acts like a lightweight machine
+   - Register Container as Selenium Node
+
+Linux Image
+      |
+  Container- we create a Linux Container
+      |
+ Selenium Node
+
+ To acheive Like Selenium Grid
+  Hub and Nodes
+  Hub Also have a container
+  Nodes Also Have a Containers
+
+  Docker - containerazation
+
+  basic commands
+  ------------
+  docker version
+  docker -v
+  docker info
+  docker --help
+  docker login
+
+
+  images commands
+  ---------------
+  docker images
+  docker pull ubuntu
+  docker rmi <image id>
+
+
+  container commands
+  ------------------
+  docker ps
+  docker run ubuntu
+  docker start ubuntu
+  docker stop ubuntu
+  docker rm <container id/name>
+
+
+  system Commands
+  ---------
+  docker stats
+  docker system df
+  docker system prune -f
+
+
+
+  3 -images
+  1-hub
+  2-linux -firefox
+  3-linux -chrome

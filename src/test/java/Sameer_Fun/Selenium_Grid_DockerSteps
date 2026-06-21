@@ -1,0 +1,146 @@
+=================================================
+SELENIUM GRID WITH DOCKER - QUICK REFERENCE
+=================================================
+
+1. Pull Images
+-------------------------------------------------
+
+docker pull selenium/hub
+
+docker pull selenium/node-chrome
+
+docker pull selenium/node-edge
+
+
+2. Verify Downloaded Images
+-------------------------------------------------
+
+docker images
+
+
+3. Create Docker Network
+-------------------------------------------------
+
+docker network create grid
+
+
+4. Create Selenium Hub Container
+-------------------------------------------------
+
+docker run -d --name selenium-hub --network grid -p 4442:4442 -p 4443:4443 -p 4444:4444 selenium/hub
+
+
+5. Create Chrome Node Container
+-------------------------------------------------
+
+docker run -d --name chrome-node --network grid -e SE_EVENT_BUS_HOST=selenium-hub -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-chrome
+
+
+6. Create Edge Node Container
+-------------------------------------------------
+
+docker run -d --name edge-node --network grid -e SE_EVENT_BUS_HOST=selenium-hub -e SE_EVENT_BUS_PUBLISH_PORT=4442 -e SE_EVENT_BUS_SUBSCRIBE_PORT=4443 selenium/node-edge
+
+
+7. Verify Running Containers
+-------------------------------------------------
+
+docker ps
+
+
+8. Verify Docker Network
+-------------------------------------------------
+
+docker network ls
+
+docker network inspect grid
+
+
+9. Open Selenium Grid UI
+-------------------------------------------------
+
+http://localhost:4444
+
+
+10. View Container Logs
+-------------------------------------------------
+
+docker logs selenium-hub
+
+docker logs chrome-node
+
+docker logs edge-node
+
+
+11. Enter a Container
+-------------------------------------------------
+
+docker exec -it chrome-node bash
+
+docker exec -it edge-node bash
+
+
+12. Check Linux OS Inside Container
+-------------------------------------------------
+
+uname -a
+
+
+13. Stop Containers
+-------------------------------------------------
+
+docker stop selenium-hub chrome-node edge-node
+
+
+14. Start Containers Again
+-------------------------------------------------
+
+docker start selenium-hub chrome-node edge-node
+
+
+15. Remove Containers
+-------------------------------------------------
+
+docker rm -f selenium-hub chrome-node edge-node
+
+
+16. Remove Network
+-------------------------------------------------
+
+docker network rm grid
+
+
+IMPORTANT NOTES
+-------------------------------------------------
+
+1. Selenium Docker images are Linux-based containers.
+
+2. Hub is the central server that manages nodes.
+
+3. Chrome Node and Edge Node register themselves with the Hub.
+
+4. Selenium tests connect to:
+   http://localhost:4444
+
+5. Docker Containers ≠ Virtual Machines.
+
+6. Architecture:
+
+   Windows Laptop
+        |
+     Docker
+        |
+     Network (grid)
+        |
+   ---------------------
+   |         |         |
+   Hub    Chrome    Edge
+          Node      Node
+
+7. Verify Grid Status:
+   Open http://localhost:4444
+   You should see:
+   - 1 Chrome Node
+   - 1 Edge Node
+
+=================================================

@@ -1,0 +1,35 @@
+images
+
+
+selenium/hub
+selenium/node-chrome
+selenium/node-edge
+selenium/node-firefox
+
+# Hub (Selenium 3)
+docker pull selenium/hub
+
+# Chrome Node
+docker pull selenium/node-chrome
+
+# Firefox Node
+docker pull selenium/node-firefox
+
+# Edge Node
+docker pull selenium/node-edge
+
+Note Official Images are Linux
+
+Your Windows Laptop
+│
+├── Docker Engine
+│
+├── selenium-hub container
+│   └── Linux + Java + Selenium Hub
+│
+├── chrome-node container
+│   └── Linux + Chrome + Selenium Node
+│
+└── edge-node container
+    └── Linux + Edge + Selenium Node
+
