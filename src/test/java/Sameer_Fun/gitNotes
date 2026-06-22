@@ -1,0 +1,14 @@
+git init
+Creat a new Local repo
+
+now we ahve to provide the user deatils to git repo
+
+git config --global user.name "Sameer"
+git config --global user.email "sameeridea7@gmail.com"
+
+once every thing is done
+we will add all files to git by command git add . or git add -A
+git add -A
+git add filename
+git add *.java
+git add foldername
