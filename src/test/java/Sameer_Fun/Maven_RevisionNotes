@@ -1,0 +1,434 @@
+```text
+===========================
+MAVEN - REVISION NOTES
+===========================
+
+Why Maven?
+-----------
+- TestNG XML files cannot be executed directly outside the IDE.
+- Maven is a Build Tool used to build and execute the project from the command line.
+- Maven uses pom.xml as the central configuration file.
+
+pom.xml Contains:
+-----------------
+1. Dependencies
+   - Required libraries for the project.
+   - Example: Selenium, TestNG, Apache POI, Log4j, etc.
+
+2. Plugins
+   - Used to perform build-related activities.
+
+Important Maven Plugins:
+------------------------
+
+1. Maven Compiler Plugin
+   - Compiles Java source code.
+   - Converts .java files into .class files.
+
+2. Maven Surefire Plugin
+   - Executes TestNG/JUnit test cases.
+   - Runs the TestNG XML file specified in pom.xml.
+
+Example:
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.2.2</version>
+    <configuration>
+        <suiteXmlFiles>
+            <suiteXmlFile>master.xml</suiteXmlFile>
+        </suiteXmlFiles>
+    </configuration>
+</plugin>
+
+Note:
+- Any TestNG XML file can be executed by specifying it inside
+  <suiteXmlFile> tag.
+
+------------------------------------------------------------
+
+Maven Installation:
+-------------------
+
+Maven comes in two flavors:
+
+1. IDE Plugin
+   - Comes integrated with IntelliJ/Eclipse.
+
+2. Standalone Installation
+   - Installed at OS level.
+
+Download:
+https://maven.apache.org/download.cgi
+
+Example Maven Location:
+
+C:\Program Files\apache-maven-3.9.16\bin
+
+Add the above path to:
+Environment Variables -> Path
+
+Verify Installation:
+
+mvn -version
+
+------------------------------------------------------------
+
+Maven Lifecycles:
+-----------------
+
+1. Clean Lifecycle
+
+pre-clean
+    ↓
+clean
+    ↓
+post-clean
+
+Command:
+
+mvn clean
+
+Purpose:
+- Deletes target folder.
+- Removes old .class files.
+- Removes old reports.
+- Removes old JAR/WAR files.
+- Ensures a fresh build.
+
+------------------------------------------------------------
+
+2. Default Build Lifecycle
+
+validate
+    ↓
+compile
+    ↓
+test
+    ↓
+package
+    ↓
+verify
+    ↓
+install
+    ↓
+deploy
+
+------------------------------------------------------------
+
+Most Common Maven Commands:
+---------------------------
+
+mvn clean
+- Deletes target folder.
+
+mvn compile
+- validate + compile
+
+mvn test
+- validate + compile + test
+
+mvn package
+- validate + compile + test + package
+
+mvn install
+- validate + compile + test + package + verify + install
+
+mvn clean install
+- clean + validate + compile + test + package + verify + install
+
+------------------------------------------------------------
+
+mvn clean install:
+------------------
+
+Command:
+
+cd C:\Users\Mohamed Imran\IdeaProjects\2026_Selenium_EcommerceProject
+
+mvn clean install
+
+What Happens?
+
+1. Deletes target folder.
+2. Compiles source code.
+3. Compiles test code.
+4. Runs TestNG/JUnit test cases.
+5. Creates JAR/WAR file.
+6. Verifies the build.
+7. Installs artifact into local Maven repository (.m2).
+
+Interview Answer:
+
+mvn clean install first removes old build artifacts from the
+target folder, then performs a fresh build, executes all test
+cases, creates the JAR/WAR, and installs it into the local
+Maven repository.
+
+------------------------------------------------------------
+
+mvn test:
+---------
+
+Command:
+
+mvn test
+
+Lifecycle Executed:
+
+validate
+    ↓
+compile
+    ↓
+test
+
+Step 1: validate
+- Validates project structure.
+- Checks pom.xml.
+
+Step 2: compile
+- Compiles source code from src/main/java.
+- Generates .class files.
+
+Step 3: test
+- Compiles test code from src/test/java.
+- Executes TestNG/JUnit test cases using Surefire Plugin.
+
+Results:
+
+Case 1 - All Tests Pass
+
+Tests run: 10
+Failures: 0
+Errors: 0
+Skipped: 0
+
+BUILD SUCCESS
+
+Case 2 - Any Test Fails
+
+Tests run: 10
+Failures: 2
+Errors: 0
+Skipped: 0
+
+BUILD FAILURE
+
+Important Point:
+- Even one failed test case will result in BUILD FAILURE.
+- All test cases must pass to get BUILD SUCCESS.
+
+Interview Answer:
+
+mvn test executes the Validate → Compile → Test phases of the
+Maven lifecycle. It compiles application code, compiles test
+code, and executes TestNG/JUnit test cases. If all tests pass,
+Maven shows BUILD SUCCESS; otherwise BUILD FAILURE.
+
+------------------------------------------------------------
+
+Running Tests Using BAT File:
+-----------------------------
+
+Create a file:
+
+run.bat
+
+Add:
+
+cd C:\Users\Mohamed Imran\IdeaProjects\2026_Selenium_EcommerceProject
+
+mvn test
+
+Save and double-click run.bat to execute the Maven TestNG suite.
+
+------------------------------------------------------------
+
+Key Interview Questions:
+------------------------
+
+Q. Why Maven?
+A. Maven is a build and dependency management tool that helps
+compile code, manage dependencies, execute test cases, and
+create build artifacts.
+
+Q. Why Maven Surefire Plugin?
+A. It is used to execute TestNG/JUnit test cases from Maven.
+
+Q. Why mvn clean?
+A. To remove old build artifacts from the target folder and
+ensure a fresh build.
+
+Q. Why BUILD FAILURE occurs?
+A. Either due to compilation errors or failed test cases.
+
+Q. What is the local Maven repository?
+A. .m2 repository where Maven stores downloaded dependencies
+and installed project artifacts.
+```
+------------------------------------------------------------
+
+Ignore Test Failures (Optional):
+--------------------------------
+
+By default:
+
+✔ All Tests Pass  -> BUILD SUCCESS
+✘ Any Test Fails -> BUILD FAILURE
+
+If you want Maven to continue the build even when test cases fail,
+add the following configuration inside Maven Surefire Plugin:
+
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.2.2</version>
+
+    <configuration>
+        <suiteXmlFiles>
+            <suiteXmlFile>master.xml</suiteXmlFile>
+        </suiteXmlFiles>
+
+        <testFailureIgnore>true</testFailureIgnore>
+
+    </configuration>
+</plugin>
+
+Result:
+
+Tests run: 10
+Failures: 2
+Errors: 0
+Skipped: 0
+
+BUILD SUCCESS
+
+Interview Answer:
+
+By default, Maven marks the build as FAILED if any test case fails.
+Using:
+
+<testFailureIgnore>true</testFailureIgnore>
+
+in the Maven Surefire Plugin instructs Maven to continue the build
+and show BUILD SUCCESS even when some test cases fail.
+
+Note:
+This configuration is generally NOT recommended in automation
+frameworks and CI/CD pipelines because failed test cases should
+normally fail the build and notify the team.
+
+Interview Question:
+Can you explain Maven and Maven Build Lifecycle?
+
+Answer:
+
+Maven is a Build Automation and Dependency Management Tool used primarily for Java projects.
+
+It helps us to:
+
+1. Manage project dependencies.
+2. Compile source code.
+3. Execute test cases.
+4. Create build artifacts such as JAR/WAR files.
+5. Install artifacts into local repositories.
+6. Deploy artifacts to remote repositories.
+
+Maven uses a configuration file called pom.xml
+(Project Object Model) where we define:
+
+- Project information
+- Dependencies
+- Plugins
+- Build configurations
+
+For example:
+- Selenium dependency
+- TestNG dependency
+- Maven Surefire Plugin
+- Maven Compiler Plugin
+
+------------------------------------------------------------
+
+Maven Build Lifecycle:
+
+Maven follows a predefined lifecycle called the Default Build Lifecycle.
+
+validate
+    ↓
+compile
+    ↓
+test
+    ↓
+package
+    ↓
+verify
+    ↓
+install
+    ↓
+deploy
+
+1. validate
+   - Validates project structure and pom.xml.
+
+2. compile
+   - Compiles source code.
+   - Converts .java files into .class files.
+
+3. test
+   - Compiles test classes.
+   - Executes TestNG/JUnit test cases.
+
+4. package
+   - Creates JAR/WAR file.
+
+5. verify
+   - Performs additional quality checks.
+
+6. install
+   - Installs the artifact into the local Maven repository (.m2).
+
+7. deploy
+   - Uploads the artifact to a remote repository such as Nexus or Artifactory.
+
+------------------------------------------------------------
+
+In My Automation Framework:
+
+- I use Maven to manage Selenium and TestNG dependencies.
+- Maven Compiler Plugin compiles the project code.
+- Maven Surefire Plugin executes the TestNG XML suite.
+- We commonly run commands like:
+
+mvn clean test
+mvn clean install
+
+------------------------------------------------------------
+
+Follow-up Interview Question:
+What happens when you run mvn test?
+
+Answer:
+
+Maven executes:
+
+validate
+   ↓
+compile
+   ↓
+test
+
+It compiles the application code, compiles the test code, and executes all TestNG test cases.
+
+If all test cases pass:
+BUILD SUCCESS
+
+If any test case fails:
+BUILD FAILURE
+
+------------------------------------------------------------
+
+One-Line Answer:
+
+Maven is a build and dependency management tool that automates compiling code, executing tests, packaging applications, and managing project dependencies through the pom.xml file.

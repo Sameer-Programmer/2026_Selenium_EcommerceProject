@@ -78,7 +78,7 @@ public class BaseClass {
         }
 
 
-       // driver.manage().window().maximize();
+        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
         driver.manage().deleteAllCookies();
         //driver.get("https://tutorialsninja.com/demo/index.php?route=account/register");

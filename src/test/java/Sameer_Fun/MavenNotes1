@@ -1,0 +1,113 @@
+Interview Question:
+Can you explain Maven and Maven Build Lifecycle?
+
+Answer:
+
+Maven is a Build Automation and Dependency Management Tool used primarily for Java projects.
+
+It helps us to:
+
+1. Manage project dependencies.
+2. Compile source code.
+3. Execute test cases.
+4. Create build artifacts such as JAR/WAR files.
+5. Install artifacts into local repositories.
+6. Deploy artifacts to remote repositories.
+
+Maven uses a configuration file called pom.xml
+(Project Object Model) where we define:
+
+- Project information
+- Dependencies
+- Plugins
+- Build configurations
+
+For example:
+- Selenium dependency
+- TestNG dependency
+- Maven Surefire Plugin
+- Maven Compiler Plugin
+
+------------------------------------------------------------
+
+Maven Build Lifecycle:
+
+Maven follows a predefined lifecycle called the Default Build Lifecycle.
+
+validate
+    ↓
+compile
+    ↓
+test
+    ↓
+package
+    ↓
+verify
+    ↓
+install
+    ↓
+deploy
+
+1. validate
+   - Validates project structure and pom.xml.
+
+2. compile
+   - Compiles source code.
+   - Converts .java files into .class files.
+
+3. test
+   - Compiles test classes.
+   - Executes TestNG/JUnit test cases.
+
+4. package
+   - Creates JAR/WAR file.
+
+5. verify
+   - Performs additional quality checks.
+
+6. install
+   - Installs the artifact into the local Maven repository (.m2).
+
+7. deploy
+   - Uploads the artifact to a remote repository such as Nexus or Artifactory.
+
+------------------------------------------------------------
+
+In My Automation Framework:
+
+- I use Maven to manage Selenium and TestNG dependencies.
+- Maven Compiler Plugin compiles the project code.
+- Maven Surefire Plugin executes the TestNG XML suite.
+- We commonly run commands like:
+
+mvn clean test
+mvn clean install
+
+------------------------------------------------------------
+
+Follow-up Interview Question:
+What happens when you run mvn test?
+
+Answer:
+
+Maven executes:
+
+validate
+   ↓
+compile
+   ↓
+test
+
+It compiles the application code, compiles the test code, and executes all TestNG test cases.
+
+If all test cases pass:
+BUILD SUCCESS
+
+If any test case fails:
+BUILD FAILURE
+
+------------------------------------------------------------
+
+One-Line Answer:
+
+Maven is a build and dependency management tool that automates compiling code, executing tests, packaging applications, and managing project dependencies through the pom.xml file.
