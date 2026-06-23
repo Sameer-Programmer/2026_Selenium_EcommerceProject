@@ -12,3 +12,289 @@ git add -A
 git add filename
 git add *.java
 git add foldername
+======================
+Git & GitHub Complete Revision Notes
+
+What is Git?
+- Git is a Version Control System (VCS).
+- It helps track changes in source code.
+- Every developer has their own Local Repository on their machine.
+- Git allows multiple developers to work on the same project efficiently.
+
+What is GitHub?
+- GitHub is a cloud-based platform that hosts Git repositories.
+- It acts as a Remote Repository.
+- It is used for code storage, collaboration, code review, and project management.
+
+--------------------------------------------------
+
+Git Workflow
+
+Working Directory
+↓
+Staging Area
+↓
+Local Repository
+↓
+Remote Repository (GitHub)
+
+Working Directory
+- Contains project files on your local machine.
+- Any modifications are made here first.
+
+Staging Area
+- Temporary area where files are prepared before committing.
+- Files are moved here using the git add command.
+
+Local Repository
+- Stores committed changes on your local machine.
+- Commits act as checkpoints or snapshots of your code.
+
+Remote Repository
+- Repository hosted on GitHub.
+- Used for sharing code and collaboration.
+
+--------------------------------------------------
+
+Git Installation & Initial Setup
+
+Check Git Installation
+
+git --version
+
+Create a New Local Repository
+
+git init
+
+Note:
+- Creates a new Git repository.
+- Run only once per project.
+
+Configure Username
+
+git config --global user.name "Sameer"
+
+Configure Email
+
+git config --global user.email "sameeridea7@gmail.com"
+
+Verify Configuration
+
+git config --list
+
+or
+
+git config --global user.name
+git config --global user.email
+
+--------------------------------------------------
+
+Adding Files to Staging Area
+
+Add All Files
+
+git add -A
+
+Add a Specific File
+
+git add filename
+
+Example:
+git add LoginPage.java
+
+Add All Java Files
+
+git add *.java
+
+Add an Entire Folder
+
+git add foldername
+
+Purpose:
+- Moves files from Working Directory to Staging Area.
+
+--------------------------------------------------
+
+Commit Changes
+
+git commit -m "Message"
+
+Example:
+
+git commit -m "Added Login Feature"
+
+Purpose:
+- Saves staged changes into the Local Repository.
+
+Flow:
+Staging Area → Local Repository
+
+--------------------------------------------------
+
+Push Changes to GitHub
+
+git push origin main
+
+or
+
+git push origin master
+
+Purpose:
+- Uploads committed changes from Local Repository to GitHub.
+
+Flow:
+Local Repository → Remote Repository
+
+--------------------------------------------------
+
+Pull Latest Changes from GitHub
+
+git pull
+
+Purpose:
+- Downloads latest changes from GitHub to your local machine.
+
+Flow:
+Remote Repository → Local Repository
+
+--------------------------------------------------
+
+Clone an Existing Repository
+
+git clone https://github.com/pavanoltraining/OpencartV121.git
+
+Purpose:
+- Copies a GitHub repository to your local machine.
+
+--------------------------------------------------
+
+Git Status
+
+git status
+
+Purpose:
+- Shows current repository status.
+- Displays modified files.
+- Displays staged files.
+- Displays untracked files.
+
+--------------------------------------------------
+
+View Commit History
+
+Detailed History
+
+git log
+
+Short History
+
+git log --oneline
+
+Purpose:
+- Shows commit history.
+- Displays Commit ID, Author, Date, and Message.
+
+--------------------------------------------------
+
+Complete Git Flow Example
+
+git init
+
+git config --global user.name "Sameer"
+
+git config --global user.email "sameeridea7@gmail.com"
+
+git add -A
+
+git commit -m "Initial Commit"
+
+git push origin main
+
+--------------------------------------------------
+
+Important Interview Questions
+
+What is Git?
+Git is a Version Control System used to track code changes and maintain version history.
+
+What is GitHub?
+GitHub is a cloud-based platform used to host and share Git repositories.
+
+Difference Between Git and GitHub
+
+Git:
+- Version Control System
+- Works locally
+
+GitHub:
+- Cloud platform
+- Hosts remote repositories
+
+What is a Repository?
+A repository is a storage location where project files and version history are maintained.
+
+What is a Commit?
+A commit is a snapshot of the project at a particular point in time.
+
+Command:
+git commit -m "message"
+
+What is Push?
+Push sends committed changes from Local Repository to GitHub.
+
+Command:
+git push origin main
+
+What is Pull?
+Pull downloads the latest changes from GitHub to the local machine.
+
+Command:
+git pull
+
+What is Clone?
+Clone creates a copy of an existing remote repository on the local machine.
+
+Command:
+git clone <repository-url>
+
+What is the Staging Area?
+The staging area is an intermediate area where files are prepared before committing.
+
+What Does git add Do?
+It moves files from the Working Directory to the Staging Area.
+
+How Do You Check Repository Status?
+git status
+
+How Do You View Commit History?
+git log
+or
+git log --oneline
+
+--------------------------------------------------
+
+Quick Revision Summary
+
+git init
+→ Create Local Repository
+
+git add -A
+→ Add Files to Staging Area
+
+git commit -m "Message"
+→ Save Changes in Local Repository
+
+git push origin main
+→ Upload Changes to GitHub
+
+git pull
+→ Download Latest Changes from GitHub
+
+git clone <url>
+→ Copy Repository from GitHub
+
+git status
+→ Check Repository Status
+
+git log
+→ View Commit History
